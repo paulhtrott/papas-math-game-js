@@ -1,23 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <h1>Papa&apos;s Math Game</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Coming to iOS in <strong>2020</strong>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
