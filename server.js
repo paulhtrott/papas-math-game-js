@@ -10,12 +10,11 @@ app.use(express.static(path.join(__dirname, 'build')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Sequence game endpoint.
 app.get('/api/v1/games/sequence', function (request, response) {
-  console.log(process.env);
+
   // Set json response header.
   response.setHeader('Content-Type', 'application/json');
-
-  console.log('API_KEY', process.env.REACT_APP_API_KEY);
 
   // Return game details.
   return response.status(200).send(JSON.stringify({
