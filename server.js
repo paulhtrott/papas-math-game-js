@@ -27,8 +27,10 @@ app.get('/api/v1/games/sequence', function (request, response) {
     _.random(1, 25, false)
   ];
 
+  // Generate sequence game.
   const sequence = new Sequence(randomNumbers);
 
+  // Calculate sequence game results.
   sequence.calculateSequence();
 
   // Set json response header.
