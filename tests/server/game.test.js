@@ -1,4 +1,4 @@
-const Game = require('../../server/game.js');
+const Game = require('../../server/game');
 
 test('constructor initializes correctly with default values', () => {
   const game = new Game();
@@ -6,6 +6,8 @@ test('constructor initializes correctly with default values', () => {
   expect(game.randomNumbers).toEqual([]);
   expect(game.operation).toEqual('addition');
   expect(game.operationSymbol).toEqual('+');
+  expect(game.howAnswersCalculated).toEqual([]);
+  expect(game.calculatedAnswers).toEqual([]);
 });
 
 test('constructor sets attributes correctly, addition', () => {
